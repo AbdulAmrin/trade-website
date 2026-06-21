@@ -53,25 +53,32 @@
         }
 
         .corporate-logo {
-            width: 55px;
-            height: 55px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            border: 1px solid rgba(223, 183, 108, 0.3);
+            border: 2px solid var(--accent-gold);
             object-fit: cover;
             background-color: #fff;
+            display: block;
         }
 
         .logo-text {
             font-family: 'Times New Roman', serif;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--text-light);
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
+            line-height: 1.2;
         }
         
         .logo-text span {
             color: var(--accent-gold);
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-top: 2px;
         }
 
         nav a {
@@ -90,7 +97,7 @@
             color: var(--accent-gold);
         }
 
-        /* Hero Section - Clean & Direct */
+        /* Hero Section */
         .hero {
             position: relative;
             background: linear-gradient(rgba(3, 10, 20, 0.85), rgba(3, 10, 20, 0.95)), 
@@ -113,11 +120,11 @@
 
         .hero h1 {
             font-family: 'Times New Roman', serif;
-            font-size: 50px;
+            font-size: 48px;
             font-weight: 400;
             letter-spacing: 1px;
             line-height: 1.3;
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto 25px;
             color: var(--text-light);
         }
@@ -132,7 +139,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Simplified Info Matrix */
+        /* Matrix Scope */
         .container {
             padding: 100px 8%;
         }
@@ -204,7 +211,7 @@
             line-height: 1.8;
         }
 
-        /* Simplified Company Motto Panel */
+        /* Motto Statement */
         .statement-panel {
             background-color: var(--panel-dark);
             border-top: 1px solid rgba(223, 183, 108, 0.1);
@@ -267,7 +274,7 @@
             color: var(--accent-hover);
         }
 
-        /* Floating Communication Button */
+        /* Floating WhatsApp Button */
         .whatsapp-luxury-float {
             position: fixed;
             bottom: 40px;
@@ -334,7 +341,7 @@
         @media (max-width: 768px) {
             header { padding: 20px 5%; flex-direction: column; gap: 15px; }
             nav a { margin: 0 10px; font-size: 11px; }
-            .hero h1 { font-size: 34px; }
+            .hero h1 { font-size: 32px; }
             .hero p { font-size: 16px; }
             .container { padding: 60px 5%; }
             .statement-panel p { font-size: 18px; }
@@ -344,14 +351,14 @@
 </head>
 <body>
 
-    <a href="https://wa.me/971503083292?text=Hello%20Sameetha%20International,%20we%20wish%20to%20initiate%20a%20trade%20consultation." class="whatsapp-luxury-float" target="_blank">
+    <a href="https://wa.me/971503083292?text=Hello%20Sameetha%20International%20Exports%20%26%20Imports,%20we%20wish%20to%20initiate%20a%20trade%20consultation." class="whatsapp-luxury-float" target="_blank">
         CONCIERGE DESK
     </a>
 
     <header>
         <a href="#" class="brand-container">
-            <img src="logo.jpg" alt="Sameetha International Logo" class="corporate-logo">
-            <div class="logo-text">Sameetha <span>International</span></div>
+            <img src="./logo.jpg" alt="Sameetha International Exports & Imports" class="corporate-logo" onerror="this.src='logo.jpg'">
+            <div class="logo-text">Sameetha International <span>Exports & Imports</span></div>
         </a>
         <nav>
             <a href="#channels">Trade Focus</a>
@@ -362,7 +369,7 @@
 
     <section class="hero">
         <span class="hero-badge">Global Export & Import</span>
-        <h1>Reliable Commodity Trading Worldwide</h1>
+        <h1>Sameetha International Exports & Imports</h1>
         <p>Connecting trusted suppliers and potential buyers across primary international trade lanes.</p>
     </section>
 

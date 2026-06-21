@@ -87,12 +87,16 @@
 
     <section id="desk" class="contact-area">
         <div class="form-box">
-            <form action="https://formspree.io/f/xykqgvva" method="POST">
+            <form id="contactForm" action="https://formspree.io/f/xykqgvva" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Enquiry" required></textarea>
-                <button type="submit">SEND ENQUIRY</button>
+                <button type="submit" id="submitBtn">SEND ENQUIRY</button>
             </form>
+            <div id="successMsg" style="display:none; text-align:center; padding:20px; color:var(--accent-gold);">
+                <h3>Thank you!</h3>
+                <p>Your enquiry has been sent successfully. We will be in touch shortly.</p>
+            </div>
         </div>
         <div style="text-align:center;">
             <a href="mailto:contact@sameethainternational.com" style="color: var(--accent-gold); font-size: 18px; text-decoration:none;">contact@sameethainternational.com</a>
@@ -102,6 +106,28 @@
     <footer>
         <p>&copy; 2026 Sameetha International. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const status = document.getElementById("successMsg");
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    form.style.display = "none";
+                    status.style.display = "block";
+                } else {
+                    alert("Oops! There was a problem submitting your form.");
+                }
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Trade Enterprise | International Export-Import</title>
+    <title>Sameetha International Exports & Imports | Global B2B Trade</title>
     <style>
         :root {
             --primary: #0f2b46; /* Slate Corporate Blue */
@@ -13,6 +13,7 @@
             --dark: #222;
             --warning: #d9534f;
             --success: #5cb85c;
+            --whatsapp: #25d366;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,10 +36,11 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .logo {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: white;
             text-decoration: none;
+            letter-spacing: 0.5px;
         }
         nav a {
             color: white;
@@ -79,12 +81,11 @@
             gap: 30px;
         }
         .card {
-            background: #white;
+            background: white;
             border: 1px solid #e1e8ed;
             padding: 30px;
             border-radius: 5px;
             border-top: 4px solid var(--primary);
-            background: white;
         }
         table {
             width: 100%;
@@ -100,7 +101,6 @@
         th { background-color: var(--primary); color: white; }
         tr:hover { background-color: #f1f1f1; }
         
-        /* Logistics Calculator Styling */
         .calc-box {
             background: white;
             border: 1px solid #e1e8ed;
@@ -178,20 +178,82 @@
             transition: background 0.2s;
         }
         .btn:hover { background: #ebd171; }
+        
+        /* Floating WhatsApp Icon */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            transition: transform 0.2s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+        
+        .contact-info-block {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 15px;
+            color: #ccc;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+        }
+        .contact-info-block a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .corporate-legal {
+            background: #fff;
+            padding: 40px 5%;
+            border-top: 1px solid #e1e8ed;
+            font-size: 14px;
+            color: #555;
+        }
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
         footer {
             background: #0b1d30;
-            color: #888;
+            color: #778899;
             text-align: center;
-            padding: 30px;
+            padding: 40px 20px;
             font-size: 14px;
             border-top: 1px solid #1a324a;
+        }
+        .footer-address {
+            color: #aaa;
+            font-size: 13px;
+            margin-top: 10px;
+            font-style: normal;
+            display: block;
         }
     </style>
 </head>
 <body>
 
+    <!-- Floating Quick-Trade WhatsApp Hub -->
+    <a href="https://wa.me/919846868806?text=Hello%20Sameetha%20International,%20I%20am%20interested%20in%20a%20commodity%20trade%20quote." class="whatsapp-float" target="_blank">
+        <span>💬 Chat via WhatsApp</span>
+    </a>
+
     <header>
-        <a href="#" class="logo">GLOBAL TRADE Ltd.</a>
+        <a href="#" class="logo">SAMEETHA INTERNATIONAL</a>
         <nav>
             <a href="#about">About</a>
             <a href="#products">Products</a>
@@ -201,21 +263,20 @@
     </header>
 
     <section class="hero">
-        <h1>Connecting Indian Production with Global Markets</h1>
-        <p>Reliable, compliant, and highly structured supply chains targeting Europe, the UAE, and worldwide destinations.</p>
-        <p style="font-size: 14px; color: var(--accent);">Official Temporary Web Gateway</p>
+        <h1>Sameetha International Exports & Imports</h1>
+        <p>Connecting Premium Indian Production with Strategic Global Markets across Europe, the UAE, and Beyond.</p>
     </section>
 
     <section id="about" class="container">
         <h2 class="section-title">Corporate Overview</h2>
         <div class="about-grid">
             <div class="card">
-                <h3>Our Trade Corridors</h3>
-                <p>We specialize strictly in low-competition, high-margin trade lanes—leveraging major bilateral treaties like the India-UAE CEPA for streamlined customs clearance.</p>
+                <h3>Global Trade Corridors</h3>
+                <p>At Sameetha International, we streamline supply chains across high-margin international trade lanes, actively optimizing customs navigation via bilateral frameworks like the India-UAE CEPA.</p>
             </div>
             <div class="card">
-                <h3>Quality Assurance</h3>
-                <p>Every shipment undergoes rigorous third-party analysis (SGS / Intertek) at the port of origin, ensuring complete batch safety and regulatory compliance before departure.</p>
+                <h3>Strict Quality Assurance</h3>
+                <p>We prioritize zero-defect cargo delivery. Every commodity batch is subjected to comprehensive, accredited third-party inspections (SGS / Intertek) before moving past origin ports.</p>
             </div>
         </div>
     </section>
@@ -256,11 +317,10 @@
         </div>
     </section>
 
-    <!-- LIVE LOGISTICS CALCULATOR INJECTED HERE -->
     <section id="calculator" class="container">
         <h2 class="section-title">Ocean Freight Loading Calculator</h2>
         <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: #666;">
-            Estimate payload weight metrics to optimize your sea freight volume footprints prior to requesting a formal quote.
+            Pre-calculate shipment payload metrics to optimize container capacity before submitting your formal trade request to Sameetha International.
         </p>
         
         <div class="calc-box">
@@ -334,15 +394,47 @@
                 </div>
                 <button type="submit" class="btn">Submit Formal Trade Inquiry</button>
             </form>
+            
+            <div class="contact-info-block">
+                <p style="font-weight: bold; margin-bottom: 15px; color: white;">Global Communications Desk:</p>
+                <p>📧 Email: <a href="mailto:amlin786@yahoo.com">amlin786@yahoo.com</a></p>
+                <p>📞 Phone / WhatsApp: <a href="tel:+919846868806">+91 98468 68806</a></p>
+                <p>📍 Registered Office: Kollam, Kerala, India - 691010</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="corporate-legal">
+        <div class="legal-grid">
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">Corporate Governance</h4>
+                <p style="margin: 5px 0;"><strong>Legal Entity:</strong> Sameetha International Exports & Imports</p>
+                <p style="margin: 5px 0;"><strong>IEC Status:</strong> Applied / In Progress</p>
+                <p style="margin: 5px 0;"><strong>Commercial Banking:</strong> Current Account In Progress</p>
+                <p style="margin: 5px 0;"><strong>Jurisdiction:</strong> Kollam, Kerala, India</p>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">Trade Frameworks</h4>
+                <p style="margin: 5px 0;">• Transacting via Incoterms 2020 Definitions</p>
+                <p style="margin: 5px 0;">• Strict Quality Verification (SGS/Intertek)</p>
+                <p style="margin: 5px 0;">• Adhering to DGFT Indian Export Regulations</p>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">B2B Legal Policies</h4>
+                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Privacy Policy & GDPR Statement</a></p>
+                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Standard Terms of Service</a></p>
+                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Anti-Bribery Compliance Protocol</a></p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Global Trade Enterprise. All Rights Reserved. | Designed for International Trust.</p>
-        <p style="font-size: 11px; margin-top: 5px; color: #555;">Hosted securely via enterprise cloud networks.</p>
+        <p style="margin: 0; font-weight: 600; color: #fff;">&copy; 2026 Sameetha International Exports & Imports. All Rights Reserved.</p>
+        <address class="footer-address">
+            Operations Headquarters: Kollam, Kerala, India, PIN: 691010 | Global Trade &amp; Logistics Hub
+        </address>
     </footer>
 
-    <!-- CALCULATOR LOGIC SCRIPT -->
     <script>
         function calculateLogistics() {
             const unitWeight = parseFloat(document.getElementById('calc-product').value);
@@ -363,7 +455,6 @@
                 statusBadge.className = 'status-badge badge-safe';
             }
         }
-        // Initialize calculation on load
         window.onload = calculateLogistics;
     </script>
 </body>

@@ -11,8 +11,6 @@
             --accent: #d4af37; /* Trust Gold */
             --light: #f4f7f9;
             --dark: #222;
-            --warning: #d9534f;
-            --success: #5cb85c;
             --whatsapp: #25d366;
         }
         body {
@@ -52,13 +50,13 @@
             color: var(--accent);
         }
         .hero {
-            background: linear-gradient(rgba(15, 43, 70, 0.85), rgba(15, 43, 70, 0.85)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80') center/cover;
+            background: linear-gradient(rgba(15, 43, 70, 0.9), rgba(15, 43, 70, 0.9)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80') center/cover;
             color: white;
             padding: 120px 5%;
             text-align: center;
         }
         .hero h1 { font-size: 42px; margin-bottom: 20px; }
-        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; }
+        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
         .container { padding: 60px 5%; }
         .section-title {
             text-align: center;
@@ -75,110 +73,74 @@
             background: var(--accent);
             margin: 10px auto 0;
         }
-        .about-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
         .card {
             background: white;
             border: 1px solid #e1e8ed;
-            padding: 30px;
+            padding: 35px;
             border-radius: 5px;
             border-top: 4px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background: white;
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 15px;
         }
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th { background-color: var(--primary); color: white; }
-        tr:hover { background-color: #f1f1f1; }
-        
-        .calc-box {
-            background: white;
-            border: 1px solid #e1e8ed;
-            border-radius: 8px;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 35px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .form-group { margin-bottom: 25px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--primary); }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            background: #fff;
-            color: #333;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 15px;
-        }
-        .radio-group {
-            display: flex;
-            gap: 20px;
-            margin-top: 5px;
-        }
-        .radio-group label {
-            font-weight: normal;
-            cursor: pointer;
-        }
-        .results-panel {
+        .highlight-box {
             background: var(--light);
-            padding: 20px;
-            border-radius: 6px;
-            margin-top: 25px;
-            border-left: 5px solid var(--primary);
+            padding: 40px 5%;
+            text-align: center;
+            border-top: 1px solid #e1e8ed;
+            border-bottom: 1px solid #e1e8ed;
         }
-        .result-line {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            font-size: 16px;
+        .highlight-box p {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 22px;
+            color: var(--secondary);
+            font-style: italic;
+            line-height: 1.8;
         }
-        .result-line strong { color: var(--primary); }
-        .status-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
-        .badge-safe { background-color: var(--success); }
-        .badge-overload { background-color: var(--warning); }
-        
-        .rfq-box {
+        .contact-section {
             background: var(--primary);
             color: white;
-            padding: 40px;
-            border-radius: 8px;
-            max-width: 600px;
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
             margin: 40px auto 0;
         }
-        .rfq-box label { color: #eee; }
-        .btn {
-            background: var(--accent);
-            color: var(--primary);
-            padding: 14px 28px;
-            border: none;
-            border-radius: 4px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-            transition: background 0.2s;
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .btn:hover { background: #ebd171; }
-        
+        .contact-card h4 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .contact-card a:hover {
+            color: var(--accent);
+        }
         /* Floating WhatsApp Icon */
         .whatsapp-float {
             position: fixed;
@@ -202,37 +164,11 @@
             transform: scale(1.05);
             color: white;
         }
-        
-        .contact-info-block {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 15px;
-            color: #ccc;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 25px;
-        }
-        .contact-info-block a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .corporate-legal {
-            background: #fff;
-            padding: 40px 5%;
-            border-top: 1px solid #e1e8ed;
-            font-size: 14px;
-            color: #555;
-        }
-        .legal-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-        }
         footer {
             background: #0b1d30;
             color: #778899;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
             font-size: 14px;
             border-top: 1px solid #1a324a;
         }
@@ -247,183 +183,68 @@
 </head>
 <body>
 
-    <!-- Floating Quick-Trade WhatsApp Hub -->
-    <a href="https://wa.me/919846868806?text=Hello%20Sameetha%20International,%20I%20am%20interested%20in%20a%20commodity%20trade%20quote." class="whatsapp-float" target="_blank">
+    <!-- Floating WhatsApp Hub (Connected directly to your Netherlands line) -->
+    <a href="https://wa.me/31620321708?text=Hello%20Sameetha%20International,%20I%20am%20interested%20in%20discussing%20a%20trade%20collaboration." class="whatsapp-float" target="_blank">
         <span>💬 Chat via WhatsApp</span>
     </a>
 
     <header>
         <a href="#" class="logo">SAMEETHA INTERNATIONAL</a>
         <nav>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#calculator">Logistics Planner</a>
-            <a href="#rfq">Request Quote</a>
+            <a href="#vision">Our Focus</a>
+            <a href="#motto">Our Values</a>
+            <a href="#contact">Contact Desk</a>
         </nav>
     </header>
 
     <section class="hero">
         <h1>Sameetha International Exports & Imports</h1>
-        <p>Connecting Premium Indian Production with Strategic Global Markets across Europe, the UAE, and Beyond.</p>
+        <p>A trust-driven global enterprise specializing in high-standard international import and export operations.</p>
     </section>
 
-    <section id="about" class="container">
-        <h2 class="section-title">Corporate Overview</h2>
-        <div class="about-grid">
+    <section id="vision" class="container">
+        <h2 class="section-title">Strategic Trade Channels</h2>
+        <div class="grid">
             <div class="card">
-                <h3>Global Trade Corridors</h3>
-                <p>At Sameetha International, we streamline supply chains across high-margin international trade lanes, actively optimizing customs navigation via bilateral frameworks like the India-UAE CEPA.</p>
+                <h3>Core Export Markets</h3>
+                <p>We supply premium rices and pulses, launching strategic distributions into the United Arab Emirates (UAE) and neighboring Gulf countries. Our immediate scale horizon focuses on entering and establishing robust supply channels into Europe.</p>
             </div>
             <div class="card">
-                <h3>Strict Quality Assurance</h3>
-                <p>We prioritize zero-defect cargo delivery. Every commodity batch is subjected to comprehensive, accredited third-party inspections (SGS / Intertek) before moving past origin ports.</p>
+                <h3>Global Re-Export Operations</h3>
+                <p>Leveraging deep supply connections, we manage import channels from the African continent, executing optimized global re-export trade handling to serve destinations worldwide.</p>
+            </div>
+            <div class="card">
+                <h3>Long-Term Collaboration</h3>
+                <p>Our operation is entirely built for the global stage. We are open to collaborating with potential international buyers, creating high-value deals, and working as a dependable, long-term trade partner.</p>
             </div>
         </div>
     </section>
 
-    <section id="products" class="container" style="background: var(--light);">
-        <h2 class="section-title">Export Commodity Portfolio</h2>
-        <div style="overflow-x:auto;">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Commodity Class</th>
-                        <th>HS Code Range</th>
-                        <th>Standard Packaging</th>
-                        <th>Primary Incoterms</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Value-Added Millet Snacks</strong></td>
-                        <td>1904.10</td>
-                        <td>Retail Packs / Laminated Cartons</td>
-                        <td>FOB Mundra / CIF Jebel Ali</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Dehydrated Superfoods (Moringa)</strong></td>
-                        <td>1106.30</td>
-                        <td>25kg HDPE Laminated Bags</td>
-                        <td>FOB Mumbai / CIF Rotterdam</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Eco-Friendly Bagasse Tableware</strong></td>
-                        <td>4823.70</td>
-                        <td>High-Density Corrugated Boxes</td>
-                        <td>FOB Mundra / CIF Hamburg</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id="calculator" class="container">
-        <h2 class="section-title">Ocean Freight Loading Calculator</h2>
-        <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: #666;">
-            Pre-calculate shipment payload metrics to optimize container capacity before submitting your formal trade request to Sameetha International.
+    <section id="motto" class="highlight-box">
+        <p>
+            "We value quality and standards at the highest level. Our commitment is to listen to the exact needs of our buyers and suppliers with the utmost care, continuously refining our operations based on their direct feedback to remain a trustworthy leader in global trade."
         </p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title" style="color: white; margin-bottom: 10px;">Global Communications Desk</h2>
+        <p style="color: #aaa; max-width: 600px; margin: 0 auto;">Connect with our trading desk directly for import-export inquiries, allocations, and joint trade agreements.</p>
         
-        <div class="calc-box">
-            <div class="form-group">
-                <label for="calc-product">Select Commodity Type</label>
-                <select id="calc-product" onchange="calculateLogistics()">
-                    <option value="15">Value-Added Millet Snacks (approx. 15 kg/Box)</option>
-                    <option value="25">Dehydrated Moringa Powder (approx. 25 kg/Bag)</option>
-                    <option value="12">Eco-Friendly Bagasse Tableware (approx. 12 kg/Box)</option>
-                </select>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h4>WhatsApp Desk</h4>
+                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Global Messaging)</p>
+                <a href="https://wa.me/31620321708" target="_blank">+31 6 20321708</a>
             </div>
-            
-            <div class="form-group">
-                <label for="calc-qty">Planned Package Quantity (Units)</label>
-                <input type="number" id="calc-qty" value="500" min="1" max="5000" oninput="calculateLogistics()">
+            <div class="contact-card">
+                <h4>Indian Voice Line</h4>
+                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Voice Calls Only / No WhatsApp)</p>
+                <a href="tel:+919846868806">+91 98468 68806</a>
             </div>
-            
-            <div class="form-group">
-                <label>Target Container Configuration</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="container" value="20" checked onchange="calculateLogistics()"> 20ft Standard Container (Max 28,000 kg)</label>
-                    <label><input type="radio" name="container" value="40" onchange="calculateLogistics()"> 40ft Standard Container (Max 26,000 kg)</label>
-                </div>
-            </div>
-            
-            <div class="results-panel">
-                <div class="result-line">
-                    <span>Total Cargo Net Weight:</span>
-                    <span><strong id="res-weight">7500</strong> kg</span>
-                </div>
-                <div class="result-line">
-                    <span>Container Weight Capacity Status:</span>
-                    <span id="res-status" class="status-badge badge-safe">SAFE LOAD</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="compliance" class="container" style="background: var(--light);">
-        <h2 class="section-title">Trade Compliance & Verification</h2>
-        <div class="about-grid" style="text-align: center;">
-            <div class="card"><h3>REACH Pre-Registered</h3><p>Chemical components follow strict European standards.</p></div>
-            <div class="card"><h3>Zero-EtO Verification</h3><p>All agricultural exports undergo laboratory verification.</p></div>
-            <div class="card"><h3>APEDA / FIEO Member</h3><p>Fully licensed by Indian export development authorities.</p></div>
-        </div>
-    </section>
-
-    <section id="rfq" class="container">
-        <h2 class="section-title">Request For Quote (RFQ)</h2>
-        <div class="rfq-box">
-            <form action="https://formspree.io/f/placeholder" method="POST">
-                <div class="form-group">
-                    <label>Corporate Entity Name</label>
-                    <input type="text" name="company" required placeholder="e.g., Al-Mansoori Logistics">
-                </div>
-                <div class="form-group">
-                    <label>Target Commodity</label>
-                    <select name="product">
-                        <option>Value-Added Millet Snacks</option>
-                        <option>Dehydrated Superfood Powders</option>
-                        <option>Eco-Friendly Bagasse Tableware</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Required Target Destination Port</label>
-                    <input type="text" name="port" required placeholder="e.g., Jebel Ali, Rotterdam">
-                </div>
-                <div class="form-group">
-                    <label>Estimated Order Volume / Timeline</label>
-                    <textarea name="details" rows="4" required placeholder="Specify container configuration or monthly volume needs..."></textarea>
-                </div>
-                <button type="submit" class="btn">Submit Formal Trade Inquiry</button>
-            </form>
-            
-            <div class="contact-info-block">
-                <p style="font-weight: bold; margin-bottom: 15px; color: white;">Global Communications Desk:</p>
-                <p>📧 Email: <a href="mailto:amlin786@yahoo.com">amlin786@yahoo.com</a></p>
-                <p>📞 Phone / WhatsApp: <a href="tel:+919846868806">+91 98468 68806</a></p>
-                <p>📍 Registered Office: Kollam, Kerala, India - 691010</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="corporate-legal">
-        <div class="legal-grid">
-            <div>
-                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">Corporate Governance</h4>
-                <p style="margin: 5px 0;"><strong>Legal Entity:</strong> Sameetha International Exports & Imports</p>
-                <p style="margin: 5px 0;"><strong>IEC Status:</strong> Applied / In Progress</p>
-                <p style="margin: 5px 0;"><strong>Commercial Banking:</strong> Current Account In Progress</p>
-                <p style="margin: 5px 0;"><strong>Jurisdiction:</strong> Kollam, Kerala, India</p>
-            </div>
-            <div>
-                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">Trade Frameworks</h4>
-                <p style="margin: 5px 0;">• Transacting via Incoterms 2020 Definitions</p>
-                <p style="margin: 5px 0;">• Strict Quality Verification (SGS/Intertek)</p>
-                <p style="margin: 5px 0;">• Adhering to DGFT Indian Export Regulations</p>
-            </div>
-            <div>
-                <h4 style="color: var(--primary); margin-bottom: 10px; margin-top: 0;">B2B Legal Policies</h4>
-                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Privacy Policy & GDPR Statement</a></p>
-                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Standard Terms of Service</a></p>
-                <p style="margin: 5px 0;"><a href="#" style="color: var(--secondary); text-decoration: none;">Anti-Bribery Compliance Protocol</a></p>
+            <div class="contact-card">
+                <h4>Corporate Email</h4>
+                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Direct Inquiry Routing)</p>
+                <a href="mailto:amlin786@yahoo.com">amlin786@yahoo.com</a>
             </div>
         </div>
     </section>
@@ -431,31 +252,9 @@
     <footer>
         <p style="margin: 0; font-weight: 600; color: #fff;">&copy; 2026 Sameetha International Exports & Imports. All Rights Reserved.</p>
         <address class="footer-address">
-            Operations Headquarters: Kollam, Kerala, India, PIN: 691010 | Global Trade &amp; Logistics Hub
+            Registered Headquarters: Kollam, Kerala, India - 691010 | International Trade Operations
         </address>
     </footer>
 
-    <script>
-        function calculateLogistics() {
-            const unitWeight = parseFloat(document.getElementById('calc-product').value);
-            const quantity = parseInt(document.getElementById('calc-qty').value) || 0;
-            const containerType = document.querySelector('input[name="container"]:checked').value;
-            
-            const totalWeight = unitWeight * quantity;
-            const maxWeight = containerType === '20' ? 28000 : 26000;
-            
-            document.getElementById('res-weight').innerText = totalWeight.toLocaleString();
-            
-            const statusBadge = document.getElementById('res-status');
-            if (totalWeight > maxWeight) {
-                statusBadge.innerText = 'OVERWEIGHT WARNING';
-                statusBadge.className = 'status-badge badge-overload';
-            } else {
-                statusBadge.innerText = 'SAFE LOAD';
-                statusBadge.className = 'status-badge badge-safe';
-            }
-        }
-        window.onload = calculateLogistics;
-    </script>
 </body>
 </html>

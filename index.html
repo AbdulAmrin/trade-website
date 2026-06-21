@@ -3,256 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sameetha International Exports & Imports | Global B2B Trade</title>
+    <title>Sameetha International Exports & Imports | Global B2B Commodity Trading</title>
     <style>
         :root {
-            --primary: #0f2b46; /* Slate Corporate Blue */
-            --secondary: #1d4461;
-            --accent: #d4af37; /* Trust Gold */
-            --light: #f4f7f9;
-            --dark: #222;
-            --whatsapp: #25d366;
+            --bg-dark: #030a14;       /* Deep Midnight Obsidian */
+            --panel-dark: #091322;    /* Executive Fleet Blue-Grey */
+            --logo-blue: #002366;     /* Sameetha Official Navy Blue */
+            --accent-gold: #dfb76c;   /* Champagne Pearl Gold */
+            --accent-hover: #f1cf8e;  /* Polished Brass */
+            --text-light: #f4f7fa;    /* Ice White */
+            --text-muted: #8fa0b5;    /* Maritime Slate Grey */
+            --whatsapp-green: #25d366;
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            color: var(--dark);
-            line-height: 1.6;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, 'Segoe UI', Roboto;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.7;
+            letter-spacing: 0.3px;
             scroll-behavior: smooth;
         }
+
+        /* Premium Top Header with Logo Integration */
         header {
-            background-color: var(--primary);
-            color: white;
-            padding: 20px 5%;
+            background-color: rgba(3, 10, 20, 0.95);
+            border-bottom: 1px solid rgba(223, 183, 108, 0.15);
+            padding: 15px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
         }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
             text-decoration: none;
+        }
+
+        .corporate-logo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 1px solid rgba(223, 183, 108, 0.3);
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        .logo-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        
+        .logo-text span {
+            color: var(--accent-gold);
+        }
+
+        nav a {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 35px;
+            font-weight: 500;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section - Sovereign Presence */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(3, 10, 20, 0.85), rgba(3, 10, 20, 0.95)), 
+                        url('https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            padding: 140px 8% 120px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .hero-badge {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 12px;
+            margin-bottom: 25px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 54px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            color: var(--text-light);
+        }
+
+        .hero p {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
+            font-weight: 300;
             letter-spacing: 0.5px;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
+
+        /* Institutional Content Matrix */
+        .container {
+            padding: 100px 8%;
         }
-        nav a:hover {
-            color: var(--accent);
-        }
-        .hero {
-            background: linear-gradient(rgba(15, 43, 70, 0.9), rgba(15, 43, 70, 0.9)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80') center/cover;
-            color: white;
-            padding: 120px 5%;
+
+        .section-meta {
             text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
-        .hero h1 { font-size: 42px; margin-bottom: 20px; }
-        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
-        .container { padding: 60px 5%; }
+
         .section-title {
             text-align: center;
-            color: var(--primary);
-            font-size: 32px;
-            margin-bottom: 40px;
-            position: relative;
+            font-family: 'Times New Roman', serif;
+            color: var(--text-light);
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
         }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--accent);
-            margin: 10px auto 0;
-        }
-        .grid {
+
+        .matrix-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
         }
-        .card {
-            background: white;
-            border: 1px solid #e1e8ed;
-            padding: 35px;
-            border-radius: 5px;
-            border-top: 4px solid var(--primary);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+
+        .matrix-card {
+            background-color: var(--panel-dark);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 45px;
+            border-radius: 4px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
         }
-        .card h3 {
-            color: var(--primary);
-            margin-top: 0;
-            font-size: 20px;
-            margin-bottom: 15px;
+
+        .matrix-card:hover {
+            border-color: rgba(223, 183, 108, 0.3);
+            transform: translateY(-5px);
         }
-        .highlight-box {
-            background: var(--light);
-            padding: 40px 5%;
-            text-align: center;
-            border-top: 1px solid #e1e8ed;
-            border-bottom: 1px solid #e1e8ed;
+
+        .card-nomenclature {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--accent-gold);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-weight: 500;
         }
-        .highlight-box p {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 22px;
-            color: var(--secondary);
-            font-style: italic;
+
+        .matrix-card h3 {
+            font-family: 'Times New Roman', serif;
+            color: var(--text-light);
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .matrix-card p {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-muted);
+            font-size: 15px;
+            font-weight: 300;
             line-height: 1.8;
         }
-        .contact-section {
-            background: var(--primary);
-            color: white;
-            padding: 60px 5%;
+
+        /* Sovereign Statement Panel */
+        .statement-panel {
+            background-color: var(--panel-dark);
+            border-top: 1px solid rgba(223, 183, 108, 0.1);
+            border-bottom: 1px solid rgba(223, 183, 108, 0.1);
+            padding: 90px 12%;
             text-align: center;
         }
-        .contact-grid {
+
+        .statement-panel p {
+            font-family: 'Times New Roman', serif;
+            font-size: 28px;
+            color: var(--text-light);
+            line-height: 1.7;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        /* Diplomatic Communications Desk */
+        .communications-desk {
+            background: linear-gradient(rgba(9, 19, 34, 0.4), rgba(3, 10, 20, 0.4));
+            padding: 100px 8%;
+        }
+
+        .desk-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 30px;
-            max-width: 900px;
-            margin: 40px auto 0;
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        .contact-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 25px;
-            border-radius: 6px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .desk-card {
+            background-color: var(--panel-dark);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            padding: 35px 30px;
+            border-radius: 4px;
+            text-align: center;
         }
-        .contact-card h4 {
-            margin-top: 0;
-            color: var(--accent);
-            font-size: 18px;
-            margin-bottom: 10px;
+
+        .desk-card h4 {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
-        .contact-card a {
-            color: white;
+
+        .desk-card a {
+            font-family: 'Times New Roman', serif;
+            color: var(--accent-gold);
             text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
+            font-size: 20px;
+            transition: color 0.3s ease;
+            display: inline-block;
         }
-        .contact-card a:hover {
-            color: var(--accent);
+
+        .desk-card a:hover {
+            color: var(--accent-hover);
         }
-        /* Floating WhatsApp Icon */
-        .whatsapp-float {
+
+        /* Fixed Elite Floating Communication Hub */
+        .whatsapp-luxury-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--whatsapp);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 50px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--panel-dark);
+            color: var(--text-light);
+            padding: 16px 28px;
+            border-radius: 4px;
+            border: 1px solid rgba(223, 183, 108, 0.3);
             text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             z-index: 10000;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 15px;
-            transition: transform 0.2s;
+            gap: 12px;
+            transition: all 0.3s ease;
         }
-        .whatsapp-float:hover {
-            transform: scale(1.05);
-            color: white;
+
+        .whatsapp-luxury-float::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: var(--whatsapp-green);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--whatsapp-green);
         }
+
+        .whatsapp-luxury-float:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+
+        /* Institutional Footer */
         footer {
-            background: #0b1d30;
-            color: #778899;
+            background-color: #01040a;
+            border-top: 1px solid rgba(255,255,255,0.02);
+            padding: 50px 8%;
             text-align: center;
-            padding: 30px 20px;
-            font-size: 14px;
-            border-top: 1px solid #1a324a;
         }
-        .footer-address {
-            color: #aaa;
-            font-size: 13px;
-            margin-top: 10px;
+
+        footer p {
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        footer address {
+            font-family: 'Segoe UI', sans-serif;
+            color: rgba(143, 160, 181, 0.5);
+            font-size: 12px;
+            margin-top: 12px;
             font-style: normal;
-            display: block;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 20px 5%; flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; font-size: 11px; }
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 16px; }
+            .container { padding: 60px 5%; }
+            .statement-panel p { font-size: 20px; }
+            .whatsapp-luxury-float { bottom: 20px; right: 20px; padding: 12px 20px; font-size: 11px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Floating WhatsApp Hub (Connected directly to your Netherlands line) -->
-    <a href="https://wa.me/31620321708?text=Hello%20Sameetha%20International,%20I%20am%20interested%20in%20discussing%20a%20trade%20collaboration." class="whatsapp-float" target="_blank">
-        <span>💬 Chat via WhatsApp</span>
+    <a href="https://wa.me/31620321708?text=Hello%20Sameetha%20International,%20we%20wish%20to%20initiate%20a%20trade%20consultation." class="whatsapp-luxury-float" target="_blank">
+        CONCIERGE DESK
     </a>
 
     <header>
-        <a href="#" class="logo">SAMEETHA INTERNATIONAL</a>
+        <a href="#" class="brand-container">
+            <img src="logo.jpg" alt="Sameetha International Logo" class="corporate-logo">
+            <div class="logo-text">Sameetha <span>International</span></div>
+        </a>
         <nav>
-            <a href="#vision">Our Focus</a>
-            <a href="#motto">Our Values</a>
-            <a href="#contact">Contact Desk</a>
+            <a href="#channels">Channels</a>
+            <a href="#mandate">Mandate</a>
+            <a href="#desk">Communications</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Sameetha International Exports & Imports</h1>
-        <p>A trust-driven global enterprise specializing in high-standard international import and export operations.</p>
+        <span class="hero-badge">Global Asset Deployment</span>
+        <h1>Sovereign Grade Import & Export Operations</h1>
+        <p>Facilitating high-compliance, multi-directional commodity trade across principal economic corridors.</p>
     </section>
 
-    <section id="vision" class="container">
-        <h2 class="section-title">Strategic Trade Channels</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Core Export Markets</h3>
-                <p>We supply premium rices and pulses, launching strategic distributions into the United Arab Emirates (UAE) and neighboring Gulf countries. Our immediate scale horizon focuses on entering and establishing robust supply channels into Europe.</p>
+    <section id="channels" class="container">
+        <span class="section-meta">Logistical Scope</span>
+        <h2 class="section-title">Strategic Corridors</h2>
+        <div class="matrix-grid">
+            <div class="matrix-card">
+                <div class="card-nomenclature">01 / Outbound Trade</div>
+                <h3>Gulf Cooperation Council</h3>
+                <p>Deploying specialized supply chains for high-standard rices and pulses, anchored with volume distributions into the United Arab Emirates and broader Gulf markets.</p>
             </div>
-            <div class="card">
-                <h3>Global Re-Export Operations</h3>
-                <p>Leveraging deep supply connections, we manage import channels from the African continent, executing optimized global re-export trade handling to serve destinations worldwide.</p>
+            <div class="matrix-card">
+                <div class="card-nomenclature">02 / Market Expansion</div>
+                <h3>Continental Europe</h3>
+                <p>Developing structural alignment frameworks to transition premium commodity classes into targeted European commercial hubs in the immediate term.</p>
             </div>
-            <div class="card">
-                <h3>Long-Term Collaboration</h3>
-                <p>Our operation is entirely built for the global stage. We are open to collaborating with potential international buyers, creating high-value deals, and working as a dependable, long-term trade partner.</p>
+            <div class="matrix-card">
+                <div class="card-nomenclature">03 / Intercontinental Transit</div>
+                <h3>Africa & Re-Export</h3>
+                <p>Managing asset procurement networks across Africa to coordinate high-efficiency, multi-destination re-export operations on an international level.</p>
             </div>
         </div>
     </section>
 
-    <section id="motto" class="highlight-box">
+    <section id="mandate" class="statement-panel">
         <p>
-            "We value quality and standards at the highest level. Our commitment is to listen to the exact needs of our buyers and suppliers with the utmost care, continuously refining our operations based on their direct feedback to remain a trustworthy leader in global trade."
+            "We value quality and standards at the absolute highest level. Sameetha International is built on the singular mandate of fostering long-term, high-trust alignments with global buyers and suppliers. We execute with utmost care, listening acutely to ecosystem feedback to command enduring leadership in international trade."
         </p>
     </section>
 
-    <section id="contact" class="contact-section">
-        <h2 class="section-title" style="color: white; margin-bottom: 10px;">Global Communications Desk</h2>
-        <p style="color: #aaa; max-width: 600px; margin: 0 auto;">Connect with our trading desk directly for import-export inquiries, allocations, and joint trade agreements.</p>
+    <section id="desk" class="communications-desk">
+        <span class="section-meta">Institutional Interface</span>
+        <h2 class="section-title">Global Trading Desks</h2>
         
-        <div class="contact-grid">
-            <div class="contact-card">
-                <h4>WhatsApp Desk</h4>
-                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Global Messaging)</p>
+        <div class="desk-grid">
+            <div class="desk-card">
+                <h4>Secure Mobile Link</h4>
                 <a href="https://wa.me/31620321708" target="_blank">+31 6 20321708</a>
             </div>
-            <div class="contact-card">
-                <h4>Indian Voice Line</h4>
-                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Voice Calls Only / No WhatsApp)</p>
+            <div class="desk-card">
+                <h4>Indian Sovereign Line</h4>
                 <a href="tel:+919846868806">+91 98468 68806</a>
             </div>
-            <div class="contact-card">
-                <h4>Corporate Email</h4>
-                <p style="margin: 5px 0 15px 0; font-size: 13px; color: #aaa;">(Direct Inquiry Routing)</p>
+            <div class="desk-card">
+                <h4>Communications Secure E-Mail</h4>
                 <a href="mailto:amlin786@yahoo.com">amlin786@yahoo.com</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p style="margin: 0; font-weight: 600; color: #fff;">&copy; 2026 Sameetha International Exports & Imports. All Rights Reserved.</p>
-        <address class="footer-address">
-            Registered Headquarters: Kollam, Kerala, India - 691010 | International Trade Operations
+        <p>&copy; 2026 Sameetha International Exports & Imports. All Institutional Rights Reserved.</p>
+        <address>
+            HQ Operations: Kollam, Kerala, India - 691010 | Global Trade Operations Desk
         </address>
     </footer>
 

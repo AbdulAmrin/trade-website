@@ -3,77 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sameetha International Exports & Imports</title>
-    
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <title>Sameetha International Exports & Imports | Global Trade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-        :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; }
+        :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; --card-bg: #0a1626; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body { 
-            font-family: 'Times New Roman', serif; 
-            background: var(--bg); 
-            color: var(--text); 
-            line-height: 1.6; 
-            text-align: center; 
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; text-align: center; }
 
-        .logo { width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--gold); margin-bottom: 20px; object-fit: cover; }
-        h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); margin-bottom: 15px; }
-        .motto { font-style: italic; color: #8fa0b5; margin-bottom: 30px; max-width: 500px; }
+        header { padding: 60px 20px; border-bottom: 1px solid var(--gold); }
+        .logo { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--gold); margin-bottom: 20px; object-fit: cover; }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; }
         
-        .capabilities { max-width: 600px; margin: 0 auto 30px; text-align: left; }
-        .capabilities h3 { color: var(--gold); margin-bottom: 15px; text-align: center; letter-spacing: 2px; }
-        .capabilities ul { list-style: none; display: inline-block; }
-        .capabilities li { margin-bottom: 10px; }
-        .capabilities li i { color: var(--gold); margin-right: 10px; }
-        
-        .contact-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
-        .contact-btn { 
-            display: inline-block; 
-            padding: 12px 25px; 
-            border: 1px solid var(--gold); 
-            color: var(--gold); 
-            text-decoration: none; 
-            font-weight: bold; 
-            transition: 0.3s;
-            text-transform: uppercase;
-        }
-        .contact-btn:hover { background: var(--gold); color: var(--bg); }
-        
-        .footer { margin-top: auto; padding-top: 50px; font-size: 0.8rem; color: #555; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        h2 { color: var(--gold); margin: 40px 0 25px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Grids */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .product-card { background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid #1a2533; transition: 0.3s; }
+        .product-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+
+        /* Certs & Locations */
+        .certs { display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap; }
+        .cert-item { text-align: center; color: var(--gold); }
+
+        /* Contact Section */
+        .contact-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .contact-btn-email { padding: 15px 30px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-weight: bold; transition: 0.3s; text-transform: uppercase; }
+        .contact-btn-email:hover { background: var(--gold); color: var(--bg); }
+        .contact-btn-wa { padding: 15px 30px; background: #25D366; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+
+        .footer { padding: 40px; font-size: 0.8rem; color: #555; border-top: 1px solid #1a2533; }
     </style>
 </head>
 <body>
 
-    <img src="logo.jpg" alt="Logo" class="logo">
-    
-    <h1>Sameetha International Exports & Imports</h1>
-    
-    <p class="motto">"Excellence, Integrity, and Long-Term Partnership."</p>
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <h1>Sameetha International Exports & Imports</h1>
+        <p style="font-style: italic; color: #8fa0b5;">"Excellence, Integrity, and Long-Term Global Partnership."</p>
+    </header>
 
-    <div class="capabilities">
-        <h3>OUR CORE CAPABILITIES</h3>
-        <ul>
-            <li><i class="fas fa-check"></i> Premium Commodity Procurement</li>
-            <li><i class="fas fa-check"></i> Global Supply Chain Management</li>
-            <li><i class="fas fa-check"></i> Rigorous Quality Assurance</li>
-            <li><i class="fas fa-check"></i> Reliable Export Logistics</li>
-        </ul>
-    </div>
+    <div class="container">
+        
+        <h2>Premium Product Portfolio</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="basmati.jpg" alt="Basmati Rice" style="width:100%; height:220px; object-fit:cover; border:1px solid var(--gold); margin-bottom: 15px;">
+                <h3>Premium Basmati Rice</h3>
+                <p>Authentic, aged long-grain Basmati sourced from prime agricultural regions.</p>
+            </div>
+            <div class="product-card">
+                <img src="pulses_legumes.jpg" alt="Pulses & Legumes" style="width:100%; height:220px; object-fit:cover; border:1px solid var(--gold); margin-bottom: 15px;">
+                <h3>Pulses & Legumes</h3>
+                <p>High-protein lentils, chickpeas, and beans, cleaned to international purity standards.</p>
+            </div>
+            <div class="product-card">
+                <img src="processed_food.jpg" alt="Processed Food" style="width:100%; height:220px; object-fit:cover; border:1px solid var(--gold); margin-bottom: 15px;">
+                <h3>Processed Food Items</h3>
+                <p>Value-added ready-to-cook traditional Indian staples for global retail.</p>
+            </div>
+        </div>
 
-    <div class="contact-group">
-        <a href="mailto:contact@sameethainternational.com" class="contact-btn">EMAIL US</a>
-        <a href="https://wa.me/971503083292" class="contact-btn" target="_blank">
-            <i class="fab fa-whatsapp"></i> WHATSAPP
-        </a>
+        <h2>Global Operational Regions</h2>
+        <div class="grid">
+            <div class="product-card">
+                <i class="fas fa-city" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+                <h3>UAE & GCC</h3>
+                <p>Strategic trade routes in Dubai, Abu Dhabi, Saudi Arabia, Qatar, and Kuwait.</p>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-landmark" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+                <h3>Europe</h3>
+                <p>Partnerships in the UK, Germany, the Netherlands, and France.</p>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-truck-fast" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+                <h3>Global Logistics</h3>
+                <p>End-to-end sea and air freight solutions for reliable timely delivery.</p>
+            </div>
+        </div>
+
+        <h2>Quality & Certifications</h2>
+        <div class="certs">
+            <div class="cert-item"><i class="fas fa-certificate fa-3x"></i><br>ISO Certified</div>
+            <div class="cert-item"><i class="fas fa-shield-halved fa-3x"></i><br>HACCP Compliance</div>
+            <div class="cert-item"><i class="fas fa-globe fa-3x"></i><br>APEDA Registered</div>
+        </div>
+
+        <h2>Contact Our Trade Desk</h2>
+        <div class="contact-group">
+            <a href="mailto:contact@sameethainternational.com" class="contact-btn-email"><i class="fas fa-envelope"></i> Email Us</a>
+            <a href="https://wa.me/971503083292" target="_blank" class="contact-btn-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
     </div>
 
     <div class="footer">

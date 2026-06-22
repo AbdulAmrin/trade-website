@@ -4,33 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sameetha International | Global B2B Trading</title>
+    
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; }
-        body { font-family: 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.6; text-align: center; padding: 50px 20px; }
-        .logo { width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--gold); margin-bottom: 20px; }
-        h1 { font-size: 2rem; margin-bottom: 10px; }
-        .motto { font-style: italic; color: var(--gold); margin-bottom: 30px; }
-        .services { max-width: 600px; margin: 0 auto 30px; font-size: 1rem; color: #ccc; }
-        .contact-btn { display: inline-block; padding: 12px 25px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Times New Roman', serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6; 
+            text-align: center; 
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            border: 2px solid var(--gold); 
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 { font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 5px; }
+        .subtitle { font-size: clamp(0.9rem, 3vw, 1.2rem); margin-bottom: 20px; color: var(--gold); }
+        .motto { font-style: italic; color: #8fa0b5; margin-bottom: 30px; max-width: 500px; }
+        
+        .services { max-width: 600px; margin: 0 auto 30px; padding: 0 10px; color: #ccc; }
+        
+        .contact-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .contact-btn { 
+            display: inline-block; 
+            padding: 12px 25px; 
+            border: 1px solid var(--gold); 
+            color: var(--gold); 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
         .contact-btn:hover { background: var(--gold); color: var(--bg); }
-        .footer { margin-top: 50px; font-size: 0.8rem; color: #555; }
+        
+        .footer { margin-top: auto; padding-top: 50px; font-size: 0.8rem; color: #555; }
     </style>
 </head>
 <body>
 
     <img src="logo.jpg" alt="Logo" class="logo">
+    
     <h1>Sameetha International</h1>
-    <p>Global Exports & Imports</p>
+    <p class="subtitle">Global Exports & Imports</p>
     
     <p class="motto">"Excellence, Integrity, and Long-Term Partnership."</p>
 
     <div class="services">
-        We specialize in the procurement and global distribution of premium commodities. Our expertise bridges international markets, ensuring rigorous quality standards and reliable supply chain solutions for our partners.
+        We specialize in the procurement and global distribution of premium commodities. Our expertise bridges international markets, ensuring rigorous quality standards and reliable supply chain solutions.
     </div>
 
-    <a href="mailto:contact@sameethainternational.com" class="contact-btn">EMAIL US</a>
-    <a href="https://wa.me/971503083292" class="contact-btn" target="_blank"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
+    <div class="contact-group">
+        <a href="mailto:contact@sameethainternational.com" class="contact-btn">EMAIL US</a>
+        <a href="https://wa.me/971503083292" class="contact-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> WHATSAPP
+        </a>
+    </div>
 
     <div class="footer">
         &copy; 2026 Sameetha International. All Rights Reserved.

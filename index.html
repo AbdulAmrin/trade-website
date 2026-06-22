@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Sameetha International Exports & Imports</title>
     
     <link rel="icon" type="image/jpeg" href="logo.jpg">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; }
-        
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body { 
@@ -28,19 +25,15 @@
             align-items: center;
         }
 
-        .logo { 
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            border: 2px solid var(--gold); 
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
+        .logo { width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--gold); margin-bottom: 20px; object-fit: cover; }
         h1 { font-size: clamp(1.5rem, 5vw, 2.2rem); margin-bottom: 15px; }
         .motto { font-style: italic; color: #8fa0b5; margin-bottom: 30px; max-width: 500px; }
         
-        .services { max-width: 600px; margin: 0 auto 30px; padding: 0 10px; color: #ccc; }
+        .capabilities { max-width: 600px; margin: 0 auto 30px; text-align: left; }
+        .capabilities h3 { color: var(--gold); margin-bottom: 15px; text-align: center; letter-spacing: 2px; }
+        .capabilities ul { list-style: none; display: inline-block; }
+        .capabilities li { margin-bottom: 10px; }
+        .capabilities li i { color: var(--gold); margin-right: 10px; }
         
         .contact-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
         .contact-btn { 
@@ -66,8 +59,14 @@
     
     <p class="motto">"Excellence, Integrity, and Long-Term Partnership."</p>
 
-    <div class="services">
-        We specialize in the procurement and global distribution of premium commodities. Our expertise bridges international markets, ensuring rigorous quality standards and reliable supply chain solutions.
+    <div class="capabilities">
+        <h3>OUR CORE CAPABILITIES</h3>
+        <ul>
+            <li><i class="fas fa-check"></i> Premium Commodity Procurement</li>
+            <li><i class="fas fa-check"></i> Global Supply Chain Management</li>
+            <li><i class="fas fa-check"></i> Rigorous Quality Assurance</li>
+            <li><i class="fas fa-check"></i> Reliable Export Logistics</li>
+        </ul>
     </div>
 
     <div class="contact-group">

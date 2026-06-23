@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sameetha International Exports & Imports | Global Trade</title>
     
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; --card-bg: #0a1626; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; text-align: center; }
 
-        /* Header & Logo Container */
-        header { padding: 40px 20px; background: linear-gradient(to bottom, #051222, #030a14); border-bottom: 2px solid var(--gold); }
-        
-        .logo-container {
-            width: 180px; 
-            height: 180px;
-            margin: 0 auto 20px;
-            padding: 5px;
-            border-radius: 50%;
-            background: radial-gradient(circle, #1a2533, #030a14);
-            box-shadow: 0 0 20px rgba(223, 183, 108, 0.2);
+        /* Full-Width Emblem Header */
+        .emblem-header {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(to bottom, #051222, #030a14);
+            border-bottom: 3px solid var(--gold);
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            position: relative;
         }
 
-        .logo { 
-            width: 100%; 
-            height: 100%; 
-            border-radius: 50%; 
-            object-fit: contain; 
-            background-color: white; /* Ensures transparency looks clean */
+        .emblem-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6; /* Slight transparency to let the text pop */
+            filter: contrast(1.1) brightness(0.8);
         }
 
-        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; }
+        .emblem-overlay {
+            position: absolute;
+            background: rgba(3, 10, 20, 0.6);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
         
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         h2 { color: var(--gold); margin: 40px 0 25px; text-transform: uppercase; letter-spacing: 2px; }
@@ -56,54 +63,31 @@
         .contact-btn-wa { padding: 15px 30px; background: #25D366; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; }
 
         .footer { padding: 40px; font-size: 0.8rem; color: #555; border-top: 1px solid #1a2533; }
-
-        /* Responsive Mobile adjustment */
-        @media (max-width: 600px) {
-            .logo-container { width: 120px; height: 120px; }
-        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="logo.jpg" alt="Sameetha International Logo" class="logo">
+    <header class="emblem-header">
+        <img src="logo.jpg" alt="Company Emblem" class="emblem-logo">
+        <div class="emblem-overlay">
+            <h1>Sameetha International<br>Exports & Imports</h1>
+            <p style="font-style: italic; color: var(--gold); font-size: 1.1rem;">"Excellence, Integrity, and Long-Term Global Partnership."</p>
         </div>
-        <h1>Sameetha International Exports & Imports</h1>
-        <p style="font-style: italic; color: #8fa0b5;">"Excellence, Integrity, and Long-Term Global Partnership."</p>
     </header>
 
     <div class="container">
         <h2>Premium Product Portfolio</h2>
         <div class="grid">
-            <div class="product-card">
-                <h3>Premium Basmati Rice</h3>
-                <p>Authentic, aged long-grain Basmati sourced from prime agricultural regions.</p>
-            </div>
-            <div class="product-card">
-                <h3>Pulses & Legumes</h3>
-                <p>High-protein lentils, chickpeas, and beans, cleaned to international purity standards.</p>
-            </div>
-            <div class="product-card">
-                <h3>Processed Food Items</h3>
-                <p>Value-added ready-to-cook traditional Indian staples for global retail.</p>
-            </div>
+            <div class="product-card"><h3>Premium Basmati Rice</h3><p>Aged long-grain Basmati sourced from prime agricultural regions.</p></div>
+            <div class="product-card"><h3>Pulses & Legumes</h3><p>High-protein, cleaned to international purity standards.</p></div>
+            <div class="product-card"><h3>Processed Food Items</h3><p>Traditional staples packaged for global retail.</p></div>
         </div>
 
         <h2>Global Operational Regions</h2>
         <div class="grid">
-            <div class="product-card">
-                <i class="fas fa-city" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
-                <h3>UAE & GCC</h3>
-            </div>
-            <div class="product-card">
-                <i class="fas fa-landmark" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
-                <h3>Europe</h3>
-            </div>
-            <div class="product-card">
-                <i class="fas fa-truck-fast" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
-                <h3>Global Logistics</h3>
-            </div>
+            <div class="product-card"><i class="fas fa-city" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i><h3>UAE & GCC</h3></div>
+            <div class="product-card"><i class="fas fa-landmark" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i><h3>Europe</h3></div>
+            <div class="product-card"><i class="fas fa-truck-fast" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i><h3>Global Logistics</h3></div>
         </div>
 
         <h2>Quality & Certifications</h2>
@@ -120,9 +104,7 @@
         </div>
     </div>
 
-    <div class="footer">
-        &copy; 2026 Sameetha International Exports & Imports. All Rights Reserved.
-    </div>
+    <div class="footer">&copy; 2026 Sameetha International Exports & Imports. All Rights Reserved.</div>
 
 </body>
 </html>

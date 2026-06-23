@@ -11,22 +11,24 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-        /* Professional Header */
+        /* Centered Vertical Header */
         .header-section {
             padding: 50px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
+            text-align: center;
             border-bottom: 3px solid var(--gold);
             background: linear-gradient(to bottom, #051222, #030a14);
-            text-align: left;
         }
 
-        .header-logo { width: 160px; height: 160px; object-fit: contain; }
-
         .header-text h1 { font-size: 2.2rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .header-text h2 { color: var(--gold); font-size: 1.2rem; margin: 5px 0 0 0; letter-spacing: 2px; }
+        .header-text h2 { color: var(--gold); font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 2px; }
+
+        .header-logo { 
+            width: 180px; 
+            height: 180px; 
+            object-fit: contain; 
+            margin: 0 auto; 
+            display: block; 
+        }
 
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; text-align: center; }
         h2.section-title { color: var(--gold); margin: 40px 0 25px; text-transform: uppercase; letter-spacing: 2px; }
@@ -45,20 +47,16 @@
         .contact-btn-wa { padding: 15px 30px; background: #25D366; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; }
 
         .footer { padding: 40px; font-size: 0.8rem; color: #555; border-top: 1px solid #1a2533; text-align: center; }
-
-        @media (max-width: 768px) {
-            .header-section { flex-direction: column; text-align: center; }
-        }
     </style>
 </head>
 <body>
 
     <header class="header-section">
-        <img src="logo.jpg" alt="Logo" class="header-logo">
         <div class="header-text">
             <h1>Sameetha International</h1>
             <h2>Exports & Imports</h2>
         </div>
+        <img src="logo.jpg" alt="Company Logo" class="header-logo">
     </header>
 
     <div class="container">

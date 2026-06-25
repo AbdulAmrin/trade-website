@@ -2,28 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sameetha International | Premium Rice, Spices & Jaggery Exporters</title>
-    <meta name="description" content="Sameetha International is a premier Indian exporter of Matta rice, jaggery, pulses, and spices. Serving UAE, Europe, and global markets with high-quality, hygienically packaged food products.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameetha International Exports & Imports | Premium Food Exporters</title>
+    <meta name="description" content="Sameetha International Exports & Imports is a premier exporter of Matta rice, jaggery, pulses, and spices. Serving UAE, Europe, and global markets with high-quality, hygienically sourced food products.">
     <link rel="canonical" href="https://sameethainternational.com/">
     <style>
-        .logo { width: 120px; height: auto; border-radius: 50%; }
-        nav { padding: 20px; background: #0a1626; display: flex; align-items: center; gap: 20px; }
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #ffffff; }
+
+        /* Elegant Navigation */
+        nav { background: #0a1626; padding: 20px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid #d4af37; }
+        .logo-box { display: flex; align-items: center; gap: 20px; }
+        .logo { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff; object-fit: cover; }
+        .brand-text h1 { color: #ffffff; font-size: 1.4rem; letter-spacing: 1px; }
+        .brand-text p { color: #d4af37; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: #ffffff; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: #d4af37; }
+
+        /* Hero Section */
+        .hero { background: #f4f4f4; padding: 60px 5%; text-align: center; border-bottom: 1px solid #ddd; }
+        .hero h2 { font-size: 2.5rem; color: #0a1626; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: #555; max-width: 700px; margin: 0 auto; }
+
+        /* Main Section */
+        .main-container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .features { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .box { padding: 20px; border: 1px solid #eee; border-radius: 8px; text-align: center; background: #fafafa; }
+        .box h3 { color: #0a1626; margin-bottom: 15px; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .features { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
+
     <nav>
-        <img src="logo.jpg" alt="Sameetha International Exports and Imports Logo" class="logo">
-        <div>
-            <a href="index.html">Home</a> | 
-            <a href="products.html">Product Catalog</a> | 
-            <a href="contact.html">Contact Us</a>
+        <div class="logo-box">
+            <img src="logo.jpg" alt="Sameetha International Logo" class="logo">
+            <div class="brand-text">
+                <h1>Sameetha International</h1>
+                <p>Exports & Imports</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Product Catalog</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
-    <main>
-        <h1>Sameetha International Exports & Imports</h1>
-        <p>Your Trusted Partner for Premium Indian Food Exports</p>
-        <h2>Why Choose Sameetha International?</h2>
-        <p>We source premium quality food products directly from trusted farms. We specialize in rice varieties, jaggery, and spices, ensuring consistent quality and reliable delivery.</p>
-    </main>
+
+    <header class="hero">
+        <h2>Premium Indian Food Exports</h2>
+        <p>Bridging the gap between trusted global farms and international markets. Specializing in high-quality rice, jaggery, and authentic spices.</p>
+    </header>
+
+    <div class="main-container">
+        <div class="features">
+            <div class="box">
+                <h3>Our Products</h3>
+                <p>Premium Matta rice, jaggery, and authentic spices sourced from our trusted global network of suppliers.</p>
+            </div>
+            <div class="box">
+                <h3>Quality Assured</h3>
+                <p>We source from the finest farms in Kerala and across our international network to ensure unmatched purity and traditional flavor.</p>
+            </div>
+            <div class="box">
+                <h3>Global Logistics</h3>
+                <p>Reliable and timely delivery standards, bringing high-quality food products to the UAE, Europe, and GCC markets.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

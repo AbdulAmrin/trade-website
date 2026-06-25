@@ -6,27 +6,31 @@
     <title>Product Catalog | Sameetha International Exports & Imports</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
         
-        /* Shared Nav - Same as Index */
+        /* Shared Nav */
         nav { background: #0a1626; padding: 20px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid #d4af37; }
-        .logo-box { display: flex; align-items: center; gap: 20px; }
         .logo { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #fff; }
-        .nav-links a { margin-left: 25px; text-decoration: none; color: #ffffff; font-weight: 600; }
-        .nav-links a:hover { color: #d4af37; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: #ffffff; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
 
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
-        h1 { color: #0a1626; margin-bottom: 20px; }
-        .product-list { list-style: none; }
-        .product-list li { background: #f4f4f4; padding: 15px; margin-bottom: 10px; border-left: 5px solid #d4af37; }
+        /* Page Layout */
+        .container { max-width: 1000px; margin: 50px auto; padding: 20px; }
+        h1 { color: #0a1626; text-align: center; margin-bottom: 40px; font-size: 2.2rem; }
+
+        /* Product Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 5px solid #d4af37; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .card h3 { color: #0a1626; margin-bottom: 15px; font-size: 1.4rem; }
+        .card p { color: #666; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo-box">
+        <div style="display:flex; align-items:center; gap:20px;">
             <img src="logo.jpg" alt="Logo" class="logo">
-            <h2 style="color:white;">Sameetha International</h2>
+            <h2 style="color:white; font-size: 1.2rem;">Sameetha International</h2>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
@@ -36,14 +40,25 @@
     </nav>
 
     <div class="container">
-        <h1>Our Product Catalog</h1>
-        <p>We supply high-quality food products globally with strict quality control.</p>
-        <ul class="product-list">
-            <li><strong>Premium Rice:</strong> Including Kerala Matta, Sona Masuri, and Basmati varieties.</li>
-            <li><strong>Natural Jaggery:</strong> Pure, chemical-free blocks and powder form.</li>
-            <li><strong>Authentic Spices:</strong> Premium black pepper, cardamom, turmeric, and clove.</li>
-            <li><strong>Pulses:</strong> A wide range of lentils and beans sourced for global markets.</li>
-        </ul>
+        <h1>Our Premium Product Range</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Premium Rice</h3>
+                <p>We supply authentic Kerala Matta, Sona Masuri, and fragrant Basmati, sourced for their superior grain quality and aroma.</p>
+            </div>
+            <div class="card">
+                <h3>Natural Jaggery</h3>
+                <p>Pure, mineral-rich jaggery available in blocks and powder, processed hygienically to retain traditional taste and health benefits.</p>
+            </div>
+            <div class="card">
+                <h3>Authentic Spices</h3>
+                <p>Hand-selected black pepper, cardamom, turmeric, and cloves, processed under strict quality controls for the international market.</p>
+            </div>
+            <div class="card">
+                <h3>Pulses & Legumes</h3>
+                <p>A diverse selection of premium lentils and beans, carefully graded to meet global export standards.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

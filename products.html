@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View our premium product catalog including Kerala Matta Rice, Natural Jaggery, and authentic Indian spices available for global export.">
-    <title>Product Catalog | Sameetha International</title>
+    <meta name="description" content="View our product catalog: Premium Basmati rice, high-protein pulses, and value-added processed food items available for wholesale global export.">
+    <title>Products | Basmati Rice, Pulses, & Spices | Sameetha International</title>
     <style>
-        /* Reusing the same navigation and basic body styles for uniformity */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f9f9f9; color: #333; }
-        nav { background: linear-gradient(to bottom, #0f1c2e, #0a1626); padding: 20px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid #d4af37; }
-        .brand-box { display: flex; align-items: center; }
-        .logo { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #d4af37; }
-        .brand-name { color: #ffffff; font-size: 1.1rem; margin-left: 15px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
-        .nav-links a { color: #ffffff; text-decoration: none; margin-left: 25px; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
-        .container { max-width: 1000px; margin: 50px auto; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .card { background: #fff; padding: 30px; border-radius: 12px; border-top: 5px solid #d4af37; box-shadow: 0 10px 20px rgba(0,0,0,0.05); text-align: center; }
+        :root { --bg: #030a14; --gold: #dfb76c; --text: #f4f7fa; --card-bg: #0a1626; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+        .header-wrapper { background: var(--card-bg); border-bottom: 2px solid var(--gold); padding: 20px 0; }
+        .nav { max-width: 1000px; margin: 0 auto; display: flex; justify-content: center; gap: 40px; }
+        .nav a { color: var(--gold); text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        .main-content { max-width: 1000px; margin: 40px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--gold); text-align: center; }
+        .card img { width: 100%; height: 220px; object-fit: cover; border: 1px solid var(--gold); margin-bottom: 15px; border-radius: 4px; }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="brand-box">
-            <img src="logo.jpg" alt="Logo" class="logo">
-            <span class="brand-name">Sameetha International Exports & Imports</span>
+    <div class="header-wrapper">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="grid">
+            <div class="card">
+                <img src="basmati.jpg" alt="Premium Aged Basmati Rice">
+                <h3>Premium Basmati Rice</h3>
+                <p>Authentic, long-grain Basmati sourced from prime regions.</p>
+            </div>
+            <div class="card">
+                <img src="pulses_legumes.jpg" alt="High-Protein Pulses and Legumes">
+                <h3>Pulses & Legumes</h3>
+                <p>High-protein lentils and beans cleaned to purity standards.</p>
+            </div>
+            <div class="card">
+                <img src="processed_food.jpg" alt="Ready-to-cook Processed Food">
+                <h3>Processed Food Items</h3>
+                <p>Value-added traditional staples for global retail.</p>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html">Contact</a>
-        </div>
-    </nav>
-    <main class="container">
-        <h1 style="text-align:center; color:#0a1626; margin-bottom: 40px;">Our Premium Exports</h1>
-        <section class="grid">
-            <div class="card"><h3>Premium Rice</h3><p>Authentic Kerala Matta, Sona Masuri, and fragrant Basmati.</p></div>
-            <div class="card"><h3>Natural Jaggery</h3><p>Pure, chemical-free jaggery blocks and powder.</p></div>
-            <div class="card"><h3>Authentic Spices</h3><p>Black pepper, cardamom, turmeric, and cloves.</p></div>
-            <div class="card"><h3>Pulses & Grains</h3><p>High-grade lentils and beans for global export.</p></div>
-        </section>
     </main>
 </body>
 </html>

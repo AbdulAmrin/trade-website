@@ -6,23 +6,28 @@
     <title>Contact Us | Sameetha International Exports & Imports</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
         
         /* Shared Nav */
         nav { background: #0a1626; padding: 20px 5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 4px solid #d4af37; }
         .logo { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #fff; }
-        .nav-links a { margin-left: 25px; text-decoration: none; color: #ffffff; font-weight: 600; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: #ffffff; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; }
+        .nav-links a:hover { color: #d4af37; }
 
-        .container { max-width: 600px; margin: 40px auto; padding: 20px; text-align: center; }
-        .contact-card { background: #f9f9f9; padding: 30px; border: 1px solid #ddd; border-radius: 10px; }
+        /* Contact Section */
+        .container { max-width: 600px; margin: 80px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; border-top: 5px solid #0a1626; }
+        h1 { color: #0a1626; margin-bottom: 20px; }
+        .info-box { margin-top: 30px; }
+        .info-box p { margin: 15px 0; font-size: 1.1rem; }
+        .highlight { color: #0a1626; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo-box" style="display:flex; align-items:center; gap:20px;">
+        <div style="display:flex; align-items:center; gap:20px;">
             <img src="logo.jpg" alt="Logo" class="logo">
-            <h2 style="color:white;">Sameetha International</h2>
+            <h2 style="color:white; font-size: 1.2rem;">Sameetha International</h2>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
@@ -32,13 +37,15 @@
     </nav>
 
     <div class="container">
-        <div class="contact-card">
-            <h1>Get In Touch</h1>
-            <p>We are ready to discuss your export requirements.</p>
+        <h1>Get In Touch</h1>
+        <p>We are ready to discuss your export requirements and build a long-term partnership.</p>
+        
+        <div class="info-box">
+            <p><span class="highlight">Phone:</span> +91 98468 68806</p>
+            <p><span class="highlight">Email:</span> contact@sameethainternational.com</p>
+            <p><span class="highlight">Location:</span> Kollam, Kerala, India</p>
             <br>
-            <p><strong>Phone:</strong> +91 98468 68806</p>
-            <p><strong>Email:</strong> [Insert Your Professional Email]</p>
-            <p><strong>Location:</strong> Kollam, Kerala, India</p>
+            <p style="font-size: 0.9rem; color: #888;">*Available 09:00 - 17:00 IST</p>
         </div>
     </div>
 </body>
